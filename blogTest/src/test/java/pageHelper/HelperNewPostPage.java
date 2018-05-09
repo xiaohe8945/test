@@ -51,26 +51,21 @@ public class HelperNewPostPage {
         seleniumUtil.newClick(seleniumUtil.getElement(pageNewPost.LOGIN_LINK_SIGNOUT));
     }
 
-    public static void project(SeleniumUtil seleniumUtil,String username,String password,String title,String text) {
-        loginLinkLogin(seleniumUtil);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_INPUT_USERNAME,10);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_INPUT_PASSWORD,10);
-        switchToAlert(seleniumUtil,username,password);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_BUTTON_SUBMIT,10);
-        clickLogin(seleniumUtil);
-        pageRefresh(seleniumUtil);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_LINK_PLATE,10);
-        clickPlate(seleniumUtil);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_LINK_POST,10);
-        clicklinkPost(seleniumUtil);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_INPUT_SUBJECT,10);
-        sendTitle(seleniumUtil,title);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_TEXTARER_MESSAGE,10);
-        sendText(seleniumUtil,text);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_BUTTON_POST,10);
-        clickTopicSubmit(seleniumUtil);
-        seleniumUtil.waitForElementLoad(pageNewPost.LOGIN_LINK_SIGNOUT,10);
-        clickSingOut(seleniumUtil);
+    public static void project(SeleniumUtil seleniumUtil,String username,String password,String title,String text) throws InterruptedException {
+        HelperNewPostPage.loginLinkLogin(seleniumUtil);
+        Thread.sleep(3000);
+        HelperNewPostPage.switchToAlert(seleniumUtil,username,password);
+        HelperNewPostPage.clickLogin(seleniumUtil);
+        HelperNewPostPage.pageRefresh(seleniumUtil);
+        Thread.sleep(3000);
+        HelperNewPostPage.clickPlate(seleniumUtil);
+        Thread.sleep(3000);
+        HelperNewPostPage.clicklinkPost(seleniumUtil);
+        HelperNewPostPage.sendTitle(seleniumUtil,title);
+        HelperNewPostPage.sendText(seleniumUtil,text);
+        HelperNewPostPage.clickTopicSubmit(seleniumUtil);
+        Thread.sleep(3000);
+        HelperNewPostPage.clickSingOut(seleniumUtil);
 
 
     }

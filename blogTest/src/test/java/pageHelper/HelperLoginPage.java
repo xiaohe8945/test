@@ -34,14 +34,14 @@ public class HelperLoginPage {
 
     public static void project(SeleniumUtil seleniumUtil, String username, String password) {
         seleniumUtil.waitForElementLoad(pageLogin.LOGIN_LINK_LOGIN, 10);
-        loginLinkLogin(seleniumUtil);
+        HelperLoginPage.loginLinkLogin(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageLogin.LOGIN_INPUT_USERNAME, 10);
         seleniumUtil.waitForElementLoad(pageLogin.LOGIN_INPUT_PASSWORD, 10);
         seleniumUtil.waitForElementLoad(pageLogin.LOGIN_BUTTON_SUBMIT, 10);
-        switchToAlert(seleniumUtil, username, password);
-        clickLogin(seleniumUtil);
-        pageRefresh(seleniumUtil);
+        HelperLoginPage.switchToAlert(seleniumUtil, username, password);
+        HelperLoginPage.clickLogin(seleniumUtil);
+        HelperLoginPage.pageRefresh(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageLogin.LOGIN_LINK_PLATE, 10);
-        clickPlate(seleniumUtil);
+        HelperLoginPage.clickPlate(seleniumUtil);
     }
 }

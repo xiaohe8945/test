@@ -27,13 +27,13 @@ public class HelperPostPage {
 
     public static void project(SeleniumUtil seleniumUtil,String title,String text){
         seleniumUtil.waitForElementLoad(pagePost.LOGIN_LINK_POST,10);
-        clicklinkPost(seleniumUtil);
+        HelperPostPage.clicklinkPost(seleniumUtil);
         seleniumUtil.waitForElementLoad(pagePost.LOGIN_INPUT_SUBJECT,10);
-        sendTitle(seleniumUtil,title);
+        HelperPostPage.sendTitle(seleniumUtil,title);
         seleniumUtil.waitForElementLoad(pagePost.LOGIN_TEXTARER_MESSAGE,10);
-        sendText(seleniumUtil,text);
+        HelperPostPage.sendText(seleniumUtil,text);
         seleniumUtil.waitForElementLoad(pagePost.LOGIN_BUTTON_POST,10);
-        clickTopicSubmit(seleniumUtil);
+        HelperPostPage.clickTopicSubmit(seleniumUtil);
 
 
 

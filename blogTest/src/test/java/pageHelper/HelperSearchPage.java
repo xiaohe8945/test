@@ -54,26 +54,26 @@ public class HelperSearchPage {
 
     public static void project(SeleniumUtil seleniumUtil,String username,String password,String text){
         seleniumUtil.waitForElementLoad(pageSearch.LOGIN_LINK_LOGIN,10);
-        loginLinkLogin(seleniumUtil);
+        HelperSearchPage.loginLinkLogin(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageSearch.LOGIN_INPUT_USERNAME,10);
         seleniumUtil.waitForElementLoad(pageSearch.LOGIN_INPUT_PASSWORD,10);
         seleniumUtil.waitForElementLoad(pageSearch.LOGIN_BUTTON_SUBMIT,10);
-        switchToAlert(seleniumUtil,username,password);
-        clickLogin(seleniumUtil);
-        pageRefresh(seleniumUtil);
+        HelperSearchPage.switchToAlert(seleniumUtil,username,password);
+        HelperSearchPage.clickLogin(seleniumUtil);
+        HelperSearchPage.pageRefresh(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageSearch.ELEMENT_SEARCH,10);
-        search(seleniumUtil);
+        HelperSearchPage.search(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageSearch.INPUT_SEARCH,10);
         seleniumUtil.waitForElementLoad(pageSearch.INPUT_SUBMIT_SEARCH,10);
-        searchText(seleniumUtil,text);
-        searchOperations(seleniumUtil);
+        HelperSearchPage.searchText(seleniumUtil,text);
+        HelperSearchPage.searchOperations(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageSearch.FIND_POST,10);
-        searchPost(seleniumUtil);
+        HelperSearchPage.searchPost(seleniumUtil);
         seleniumUtil.handles();
         seleniumUtil.waitForElementLoad(pageSearch.FIND_POST_TITLE,10);
-        getTitleText(seleniumUtil,text);
+        HelperSearchPage.getTitleText(seleniumUtil,text);
         seleniumUtil.waitForElementLoad(pageSearch.LOGIN_LINK_SIGNOUT,10);
-        clickSingOut(seleniumUtil);
+        HelperSearchPage.clickSingOut(seleniumUtil);
     }
 
 }

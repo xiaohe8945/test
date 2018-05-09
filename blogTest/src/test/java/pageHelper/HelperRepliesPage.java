@@ -27,11 +27,11 @@ public class HelperRepliesPage {
 
     public static void project(SeleniumUtil seleniumUtil,String text) {
         seleniumUtil.waitForElementLoad(pageReplies.LOGIN_LINK_POST,10);
-        HelperRepliesPage.clicklinkPost(seleniumUtil);
+        clicklinkPost(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageReplies.REPLIES_LINK_TEXRARER,10);
-        HelperRepliesPage.sendText(seleniumUtil,text);
+        sendText(seleniumUtil,text);
         seleniumUtil.waitForElementLoad(pageReplies.REPLIES_BUTTON_POST,10);
-        HelperRepliesPage.clickTopicSubmit(seleniumUtil);
+        clickTopicSubmit(seleniumUtil);
 
 
 

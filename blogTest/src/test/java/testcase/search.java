@@ -10,7 +10,7 @@ import util.SeleniumUtil;
 public class search extends BasicTestCase{
 
     @Test
-     public void searchPost() throws InterruptedException {
+     public void searchPost(){
         HelperSearchPage.project(seleniumUtil,"test","1234","haotest");
      }
 }

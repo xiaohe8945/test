@@ -52,25 +52,25 @@ public class HeloerVotePage {
     }
     public static void project(SeleniumUtil seleniumUtil,String text,String count,String article,String value){
         seleniumUtil.waitForElementLoad(pageVote.PUBLISH_FVOTE,10);
-        HeloerVotePage.publishVoit(seleniumUtil);
+        publishVoit(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageVote.PUBLISH_VOTE,10);
-        HeloerVotePage.publishVoit1(seleniumUtil);
+        publishVoit1(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageVote.INPUT_TITLE,10);
-        HeloerVotePage.title(seleniumUtil,text);
+        title(seleniumUtil,text);
         seleniumUtil.waitForElementLoad(pageVote.INPUT_VOTE,10);
-        HeloerVotePage.voteChiose(seleniumUtil,count);
+        voteChiose(seleniumUtil,count);
         seleniumUtil.waitForElementLoad(pageVote.INPUT_TEXTARER,10);
-        HeloerVotePage.postText(seleniumUtil,article);
+        postText(seleniumUtil,article);
         seleniumUtil.waitForElementLoad(pageVote.POST_SUBMIT,10);
-        HeloerVotePage.postSubmit(seleniumUtil);
+        postSubmit(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageVote.BUTTON_REDIO,10);
-        HeloerVotePage.postRedio(seleniumUtil);
+        postRedio(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageVote.POLL_SUBMIT,10);
-        HeloerVotePage.pollSubmit(seleniumUtil);
+        pollSubmit(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageVote.POLL_OPPTION_VOTE,10);
-        HeloerVotePage.getOpptionvalue(seleniumUtil);
+        getOpptionvalue(seleniumUtil);
         seleniumUtil.waitForElementLoad(pageVote.TITLE_NAME,10);
-        HeloerVotePage.getTitlevalue(seleniumUtil,value);
+        getTitlevalue(seleniumUtil,value);
 
     }
 

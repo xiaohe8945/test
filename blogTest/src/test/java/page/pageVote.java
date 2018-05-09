@@ -13,11 +13,6 @@ public class pageVote {
     public static final By INPUT_TITLE = By.name("subject");
     //找到选项元素
     public static final By INPUT_VOTE = By.name("polloption[]");
-  /*  public static final By INPYT_VOTE1 = By.xpath("/*//*[@id='postbox']/div[2]/div[1]/p[1]/input");
-    public static final By INPYT_VOTE2 = By.xpath("/*//*[@id='postbox']/div[2]/div[1]/p[2]/input");
-    public static final By INPYT_VOTE3 = By.xpath("/*//*[@id='postbox']/div[2]/div[1]/p[3]/input");
-    public static final By INPYT_VOTE4 = By.xpath("/*//*[@id='postbox']/div[2]/div[1]/p[4]/input");
-    public static final By INPYT_VOTE5 = By.xpath("/*//*[@id='postbox']/div[2]/div[1]/p[5]/input");*/
     //找到帖子内容输入框
     public static final By INPUT_TEXTARER = By.name("message");
     //找到发表按钮

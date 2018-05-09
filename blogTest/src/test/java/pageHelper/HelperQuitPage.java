@@ -16,6 +16,6 @@ public class HelperQuitPage {
     }
     public static void project(SeleniumUtil seleniumUtil){
         seleniumUtil.waitForElementLoad(pageQuit.LOGIN_LINK_SIGNOUT,10);
-        HelperQuitPage.clickSingOut(seleniumUtil);
+        clickSingOut(seleniumUtil);
     }
 }

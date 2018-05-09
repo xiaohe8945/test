@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 /**
  * Created by DELL on 2018/5/8.
  */
-public class pageAdmin {
+public class pageDelete {
     //找到帖子选中框
     public static final By LOGIN_INPUT_CLICK =By.name("moderate[]");
     //找到删除元素

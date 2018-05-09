@@ -1,0 +1,43 @@
+[2018-05-09 09:12:37] [INFO] 启动谷歌浏览器
+[2018-05-09 09:12:40] [INFO] 打开http:\127.0.0.1:8086\boke网页
+[2018-05-09 09:12:40] [INFO] 开始查找元素By.linkText: 登录
+[2018-05-09 09:12:40] [INFO] 找到了元素 [By.linkText: 登录]
+[2018-05-09 09:12:40] [INFO] 找到对应页面元素 link text: 登录
+[2018-05-09 09:12:40] [INFO] 点击 link text: 登录
+[2018-05-09 09:12:40] [INFO] 开始查找元素By.name: username
+[2018-05-09 09:12:42] [INFO] 找到了元素 [By.name: username]
+[2018-05-09 09:12:42] [INFO] 开始查找元素By.name: password
+[2018-05-09 09:12:42] [INFO] 找到了元素 [By.name: password]
+[2018-05-09 09:12:42] [INFO] 开始查找元素By.className: submit
+[2018-05-09 09:12:42] [INFO] 找到了元素 [By.className: submit]
+[2018-05-09 09:12:42] [INFO] 找到对应页面元素 name: username
+[2018-05-09 09:12:42] [INFO] 输入内容为：test
+[2018-05-09 09:12:42] [INFO] 找到对应页面元素 name: password
+[2018-05-09 09:12:42] [INFO] 输入内容为：1234
+[2018-05-09 09:12:42] [INFO] 找到对应页面元素 class name: submit
+[2018-05-09 09:12:42] [INFO] 点击 class name: submit
+[2018-05-09 09:12:43] [INFO] 页面已刷新
+[2018-05-09 09:12:43] [INFO] 开始查找元素By.linkText: 默认版块
+[2018-05-09 09:12:43] [INFO] 找到了元素 [By.linkText: 默认版块]
+[2018-05-09 09:12:43] [INFO] 找到对应页面元素 link text: 默认版块
+[2018-05-09 09:12:44] [INFO] 点击 link text: 默认版块
+[2018-05-09 09:12:44] [INFO] 开始查找元素By.linkText: 发帖
+[2018-05-09 09:12:44] [INFO] 找到了元素 [By.linkText: 发帖]
+[2018-05-09 09:12:44] [INFO] 找到对应页面元素 link text: 发帖
+[2018-05-09 09:12:46] [INFO] 点击 link text: 发帖
+[2018-05-09 09:12:46] [INFO] 开始查找元素By.name: subject
+[2018-05-09 09:12:46] [INFO] 找到了元素 [By.name: subject]
+[2018-05-09 09:12:46] [INFO] 找到对应页面元素 name: subject
+[2018-05-09 09:12:46] [INFO] 输入内容为： haotest
+[2018-05-09 09:12:46] [INFO] 开始查找元素By.name: message
+[2018-05-09 09:12:46] [INFO] 找到了元素 [By.name: message]
+[2018-05-09 09:12:46] [INFO] 找到对应页面元素 name: message
+[2018-05-09 09:12:47] [INFO] 输入内容为：为所欲为，为所欲为.......
+[2018-05-09 09:12:47] [INFO] 开始查找元素By.name: topicsubmit
+[2018-05-09 09:12:47] [INFO] 找到了元素 [By.name: topicsubmit]
+[2018-05-09 09:12:47] [INFO] 找到对应页面元素 name: topicsubmit
+[2018-05-09 09:12:49] [INFO] 点击 name: topicsubmit
+[2018-05-09 09:12:49] [INFO] 开始查找元素By.linkText: 退出
+[2018-05-09 09:12:49] [INFO] 找到了元素 [By.linkText: 退出]
+[2018-05-09 09:12:49] [INFO] 找到对应页面元素 link text: 退出
+[2018-05-09 09:12:50] [INFO] 点击 link text: 退出

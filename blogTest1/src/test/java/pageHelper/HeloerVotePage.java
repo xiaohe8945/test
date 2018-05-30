@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import page.pageVote;
 import util.SeleniumUtil;
 
-import java.util.List;
-
 /**
  * Created by DELL on 2018/5/8.
  */
@@ -18,7 +16,7 @@ public class HeloerVotePage {
     public static void publishVoit1(SeleniumUtil seleniumUtil){
         seleniumUtil.mouseClick(seleniumUtil.getElement(pageVote.PUBLISH_VOTE));
     }
-    public static void title(SeleniumUtil seleniumUtil,String text){
+    public static void title(SeleniumUtil seleniumUtil, String text){
         seleniumUtil.sendKeys(seleniumUtil.getElement(pageVote.INPUT_TITLE),text);
     }
     public static void voteChiose(SeleniumUtil seleniumUtil,String count){

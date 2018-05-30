@@ -1,10 +1,8 @@
 package testcase;
-
 import org.testng.annotations.Test;
 import pageHelper.HelperLoginPage;
 import pageHelper.HelperPostPage;
 import pageHelper.HelperQuitPage;
-
 /**
  * Created by DELL on 2018/5/7.
  */

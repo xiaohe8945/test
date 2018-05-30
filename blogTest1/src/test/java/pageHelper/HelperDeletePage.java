@@ -19,7 +19,7 @@ public class HelperDeletePage {
     }
     //输入删除原因
      public static void choiseDeleteText(SeleniumUtil seleniumUtil,String text){
-        seleniumUtil.sendKeys(seleniumUtil.getElement(pageDelete.DELETE_REASON_TEXTARER),text);
+        seleniumUtil.sendKeys(seleniumUtil.getElement(pageDelete.DELETE_REASON_TEXTARER), text);
     }
     //提交
     public static void choiseAccept(SeleniumUtil seleniumUtil){

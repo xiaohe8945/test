@@ -23,21 +23,21 @@ import java.util.Set;
 public class SeleniumUtil {
     private static Logger logger=Logger.getLogger(SeleniumUtil.class);
     public WebDriver driver;
-    public static String driverType;
+  /*  public static String driverType;*/
     public static Actions action;
     //启动浏览器
-    public WebDriver getDriver(String browserName) throws IOException {
-        Properties type = new Properties();
+    public WebDriver getDriver(String driverType){
+        /*Properties type = new Properties();
         InputStream team=new FileInputStream("./switchDriver");
         type.load(team);
         driverType=type.getProperty(browserName);
-        team.close();
-        if(driverType.equals("chrome")){
-            System.setProperty("webdriver.chrome.driver","E:\\driver\\chromedriver.exe");
+        team.close();*/
+        if(InitConfigData.browserName.equals("chrome")){
+            System.setProperty("webdriver.chrome.driver","D:\\driver\\chromedriver.exe");
             driver=new ChromeDriver();
             logger.info("启动谷歌浏览器");
-        }else if(driverType.equals("firefox")){
-            System.setProperty("webdriver.gecko.driver", "E:\\driver\\geckodriver.exe");
+        }else if(InitConfigData.browserName.equals("firefox")){
+            System.setProperty("webdriver.gecko.driver", "D:\\driver\\geckodriver.exe");
             driver=new FirefoxDriver();
             logger.info("启动火狐浏览器");
         }else{

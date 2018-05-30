@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class pageReplies {
 
     //找到“这是一个成语接龙游戏”帖子
-    public static final By LOGIN_LINK_POST =By.xpath("//*[@id=\"thread_31\"]/a");
+    public static final By LOGIN_LINK_POST =By.linkText("这是一个成语接龙游戏");
     //找到回帖文本输入区域
     public static final By REPLIES_LINK_TEXRARER =By.id("fastpostmessage");
     //找到发表回复按钮

@@ -10,7 +10,7 @@ public class post extends BasicTestCase {
     @Test
     public void postTest() throws InterruptedException {
         HelperLoginPage.project(seleniumUtil,"test","1234");
-        HelperPostPage.project(seleniumUtil," haotest","为所欲为，为所欲为.......");
+        HelperPostPage.project(seleniumUtil," 这是一个成语接龙游戏","为所欲为，为所欲为.......");
         HelperQuitPage.project(seleniumUtil);
     }
 

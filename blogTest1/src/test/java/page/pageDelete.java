@@ -15,7 +15,7 @@ public class pageDelete {
     //找到确定按钮
     public static final By INPUT_DELETE_SUBMIT =By.name("modsubmit");
     //找到管理中心
-    public static final By LOGIN_LINK_ADMIN =By.linkText("管理中心");
+    public static final By LOGIN_LINK_ADMIN =By.xpath("//*[@id=\"umenu\"]/a[4]");
     //找到跳转页面密码输入框
     public static final By LOGIN_INPUT_NEWPASSWORD =By.name("admin_password");
     //找到提交按钮

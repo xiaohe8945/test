@@ -4,11 +4,11 @@
     <test name="testcase">
         <classes>
             <class name="testcase.post"/>
-            <class name="testcase.Replies"/>
-            <class name="testcase.delete"/>
-            <class name="testcase.NewPost"/>
-            <class name="testcase.search"/>
-            <class name="testcase.vote"/>
+            <!--<class name="testcase.Replies"/>-->
+            <!--<class name="testcase.delete"/>-->
+            <!--<class name="testcase.NewPost"/>-->
+            <!--<class name="testcase.search"/>-->
+            <!--<class name="testcase.vote"/>-->
         </classes>
     </test>
 </suite>

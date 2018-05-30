@@ -67,7 +67,7 @@
                 <version>2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <skipTests>true</skipTests>
+                        <testFailureIgnore>true</testFailureIgnore>
                         <suiteXmlFiles>./testng.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
